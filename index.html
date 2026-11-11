@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woofs of Wisdom Dog Training | Concept redesign</title>
+<meta name="description" content="Concept redesign of the Woofs of Wisdom Dog Training homepage by My Launch Partner. Private dog training and training walks with Alora Tawoosi in Northern Virginia.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://www.woofsofwisdomdogtraining.com/">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#3B1E86; --purple-deep:#2A1563; --purple-ink:#4A3F5E;
+  --apricot:#F2A55A; --apricot-ink:#3A2005; --apricot-soft:#FCE6CF;
+  --biscuit:#FBF6EE; --biscuit-line:#E9DFCF; --meadow:#E3EFDA; --meadow-ink:#2F4A22;
+  --white:#fff;
+  --display:'Fredoka',ui-rounded,system-ui,sans-serif;
+  --body:'Nunito Sans',system-ui,-apple-system,sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--biscuit);color:var(--purple-ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--purple)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--apricot);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);color:var(--purple);font-weight:600;line-height:1.1;margin:0;text-wrap:balance}
+h2{font-size:clamp(30px,4vw,44px)}
+h3{font-size:24px;font-weight:500}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 16px/1 var(--body);text-decoration:none;padding:15px 24px;border-radius:999px;border:2px solid transparent;min-height:50px}
+.btn-main{background:var(--apricot);color:var(--apricot-ink)}
+.btn-main:hover{background:#EE9640}
+.btn-line{border-color:var(--purple);color:var(--purple)}
+.btn-line:hover{background:var(--purple);color:#fff}
+
+/* concept bar */
+.concept{background:var(--purple-deep);color:#E9E3FA;font-size:13.5px;text-align:center;padding:8px 16px}
+.concept a{color:#fff}
+.concept .more{display:inline}
+@media (max-width:640px){.concept .more{display:none}}
+
+/* header */
+header{background:var(--biscuit);border-bottom:1px solid var(--biscuit-line);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;height:84px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:66px;height:66px}
+.brand span{font:600 19px/1.05 var(--display);color:var(--purple)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;font-weight:600;font-size:16px;color:var(--purple-ink)}
+.links a:hover{color:var(--purple);text-decoration:underline;text-underline-offset:5px}
+.links a[aria-current]{color:var(--purple)}
+.menu{display:none}
+@media (max-width:900px){
+  .links{display:none}
+  .nav .btn{display:none}
+  .menu{display:block;position:relative}
+  .menu summary{list-style:none;cursor:pointer;font:700 15px var(--body);color:var(--purple);border:2px solid var(--purple);border-radius:999px;padding:10px 18px}
+  .menu summary::-webkit-details-marker{display:none}
+  .menu nav{position:absolute;right:0;top:calc(100% + 10px);background:#fff;border:1px solid var(--biscuit-line);border-radius:16px;padding:10px;min-width:230px;box-shadow:0 14px 30px rgba(42,21,99,.14)}
+  .menu nav a{display:block;padding:12px 14px;text-decoration:none;font-weight:600;color:var(--purple-ink);border-radius:10px}
+  .menu nav a:hover{background:var(--biscuit)}
+}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.4vw,66px);letter-spacing:-.5px}
+.hero .lede{font-size:19px;margin:22px 0 30px;max-width:30em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .note{margin-top:18px;font-size:15px}
+.hero-photo{position:relative}
+.hero-photo img{border-radius:28px 28px 28px 120px;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 70%}
+.badge{position:absolute;left:-22px;bottom:28px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 12px 28px rgba(42,21,99,.16);max-width:250px;font-size:14.5px;line-height:1.4}
+.badge strong{display:block;font:600 17px var(--display);color:var(--purple)}
+@media (max-width:900px){
+  .hero{padding:28px 0 48px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-photo{order:-1}
+  .hero-photo img{border-radius:22px 22px 22px 70px}
+  .badge{position:static;margin-top:14px;max-width:none;box-shadow:none;border:1px solid var(--biscuit-line)}
+}
+
+/* glance */
+.glance{background:var(--purple);color:#EDE7FB;padding:30px 0}
+.glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.glance li{font-size:15px;line-height:1.45}
+.glance b{display:block;font:500 20px/1.2 var(--display);color:#fff;margin-bottom:4px}
+@media (max-width:900px){.glance ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.glance ul{grid-template-columns:1fr;gap:18px}}
+
+section{padding:88px 0}
+@media (max-width:700px){section{padding:64px 0}}
+.intro{max-width:40em;margin-bottom:40px}
+.intro p{font-size:18px;margin-top:14px}
+
+/* training */
+.programs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.program{background:#fff;border:1px solid var(--biscuit-line);border-radius:22px;padding:30px}
+.program p{margin:12px 0 0}
+.program .who{display:inline-block;background:var(--meadow);color:var(--meadow-ink);font-weight:700;font-size:13.5px;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.program.puppy{background:var(--purple);border-color:var(--purple);color:#E9E3FA}
+.program.puppy h3{color:#fff}
+.program.puppy .who{background:var(--apricot);color:var(--apricot-ink)}
+.puppy-price{display:flex;align-items:baseline;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2)}
+.puppy-price strong{font:600 40px/1 var(--display);color:#fff}
+@media (max-width:760px){.programs{grid-template-columns:1fr}}
+
+.prices{margin-top:22px;background:#fff;border:1px solid var(--biscuit-line);border-radius:22px;padding:30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:36px;align-items:start}
+.prices table{width:100%;border-collapse:collapse}
+.prices td{padding:14px 0;border-bottom:1px dashed var(--biscuit-line);vertical-align:baseline}
+.prices tr:last-child td{border-bottom:0}
+.prices td:last-child{text-align:right;white-space:nowrap}
+.prices .amt{font:600 24px var(--display);color:var(--purple)}
+.prices .save{display:block;font-size:13.5px;color:var(--meadow-ink);font-weight:700}
+.fine{font-size:14.5px;margin-top:16px}
+.fine p{margin:0 0 4px}
+@media (max-width:760px){.prices{grid-template-columns:1fr;gap:10px}}
+
+.lima{margin-top:22px;display:flex;gap:18px;align-items:flex-start;background:var(--meadow);color:var(--meadow-ink);border-radius:22px;padding:24px 28px}
+.lima b{font:600 22px var(--display);color:var(--meadow-ink);white-space:nowrap}
+.lima p{margin:0}
+@media (max-width:600px){.lima{flex-direction:column;gap:6px}}
+
+/* about */
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:64px;align-items:center}
+.about-grid img{border-radius:28px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about blockquote{margin:26px 0;padding:0;font:500 24px/1.35 var(--display);color:var(--purple)}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:34px}.about-grid img{aspect-ratio:4/3;object-position:50% 30%}}
+
+/* walks */
+.walks-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.walks-grid img{border-radius:28px 120px 28px 28px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.ticks{list-style:none;padding:0;margin:22px 0 28px}
+.ticks li{position:relative;padding-left:30px;margin-bottom:10px}
+.ticks li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--apricot)}
+@media (max-width:860px){.walks-grid{grid-template-columns:1fr;gap:30px}.walks-grid img{border-radius:22px 70px 22px 22px}}
+
+/* gallery */
+.gallery{padding:0 0 88px}
+.strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.strip img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.strip img:nth-child(even){margin-top:34px}
+@media (max-width:760px){.strip{grid-template-columns:repeat(3,minmax(0,1fr))}.strip img:nth-child(n+4){display:none}.strip img:nth-child(even){margin-top:20px}}
+
+/* contact */
+.contact{background:var(--purple);color:#E9E3FA}
+.contact h2{color:#fff}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.contact .btn-line{border-color:#fff;color:#fff}
+.contact .btn-line:hover{background:#fff;color:var(--purple)}
+.card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:28px}
+.card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 20px}
+.card dt{font-weight:700;color:#fff}
+.card dd{margin:0;overflow-wrap:anywhere;min-width:0}
+.card a{color:#fff;text-decoration-color:var(--apricot);text-underline-offset:4px}
+.towns{margin-top:22px;font-size:15px}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;gap:34px}}
+@media (max-width:420px){.card dl{grid-template-columns:1fr;gap:2px}.card dd{margin-bottom:12px}}
+
+footer{background:var(--purple-deep);color:#C9BFE6;font-size:14.5px;padding:34px 0 36px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+footer a{color:#fff}
+.social{display:flex;gap:18px}
+
+/* mobile call bar */
+.callbar{display:none}
+@media (max-width:700px){
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--biscuit);border-top:1px solid var(--biscuit-line)}
+  .callbar a{flex:1}
+  .callbar .btn-line{background:#fff}
+  body{padding-bottom:84px}
+}
+</style>
+</head>
+<body>
+
+<div class="concept">Concept redesign by My Launch Partner.<span class="more"> This is a preview, not the official site. The current site is <a href="https://www.woofsofwisdomdogtraining.com/">woofsofwisdomdogtraining.com</a>.</span></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="https://www.woofsofwisdomdogtraining.com/">
+      <img src="assets/img/logo.png" alt="Woofs of Wisdom Dog Training logo" width="66" height="66">
+      <span>Woofs of Wisdom<br>Dog Training</span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="https://www.woofsofwisdomdogtraining.com/" aria-current="page">Home</a>
+      <a href="https://www.woofsofwisdomdogtraining.com/about">About</a>
+      <a href="https://www.woofsofwisdomdogtraining.com/dog-training">Dog training</a>
+      <a href="https://www.woofsofwisdomdogtraining.com/woof-walks">Woof Walks</a>
+      <a href="https://www.woofsofwisdomdogtraining.com/contact">Contact</a>
+    </nav>
+    <a class="btn btn-main" href="https://www.woofsofwisdomdogtraining.com/book-a-consult-today">Free phone consult</a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Mobile">
+        <a href="https://www.woofsofwisdomdogtraining.com/about">About Alora</a>
+        <a href="https://www.woofsofwisdomdogtraining.com/dog-training">Dog training</a>
+        <a href="https://www.woofsofwisdomdogtraining.com/woof-walks">Woof Walks</a>
+        <a href="https://www.woofsofwisdomdogtraining.com/contact">Contact</a>
+        <a href="https://www.woofsofwisdomdogtraining.com/book-a-consult-today">Book a free phone consult</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Understand your dog. Build a bond that lasts.</h1>
+      <p class="lede">Private dog training and training walks with Alora Tawoosi, a certified trainer serving Northern Virginia. You learn how to communicate with your dog, and why it works.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="https://www.woofsofwisdomdogtraining.com/book-a-consult-today">Book a free phone consult</a>
+        <a class="btn btn-line" href="tel:+17038539440">Call (703)&nbsp;853-9440</a>
+      </div>
+      <p class="note">Open every day except Sunday, 10&nbsp;am to 4&nbsp;pm.</p>
+    </div>
+    <div class="hero-photo">
+      <picture>
+        <source type="image/webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero-1400.webp 1400w, assets/img/hero-2048.webp 2048w" sizes="(max-width:900px) 100vw, 600px">
+        <img src="assets/img/hero-1400.jpg" srcset="assets/img/hero-800.jpg 800w, assets/img/hero-1400.jpg 1400w, assets/img/hero-2048.jpg 2048w" sizes="(max-width:900px) 100vw, 600px" alt="Four dogs sitting side by side on a blue bench in a sunny field" width="1400" height="1050" fetchpriority="high">
+      </picture>
+      <div class="badge"><strong>Certified dog trainer</strong>Animal Behavior College, specializing in basic and advanced obedience</div>
+    </div>
+  </div>
+</section>
+
+<div class="glance">
+  <div class="wrap"><ul>
+    <li><b>All breeds and ages</b>From new puppies to grown dogs with old habits</li>
+    <li><b>Training where you are</b>Your home, a local park, or wherever suits your dog</li>
+    <li><b>The LIMA approach</b>Least intrusive, minimally aversive methods first</li>
+    <li><b>Northern Virginia</b>Loudoun, Fairfax and Prince William counties</li>
+  </ul></div>
+</div>
+
+<section id="training">
+  <div class="wrap">
+    <div class="intro">
+      <h2>Training built around your dog</h2>
+      <p>Every dog has its own personality and every family has its own routine. Alora uses a range of techniques so the plan fits both, and brings the whole family into the process.</p>
+    </div>
+    <div class="programs">
+      <article class="program puppy">
+        <span class="who">Puppies up to 6 months</span>
+        <h3>Puppy Package</h3>
+        <p>Private sessions for socialization, basic obedience and potty training, at your puppy's pace and in a setting they know. A strong start for later lessons, and for your bond.</p>
+        <div class="puppy-price"><strong>$650</strong><span>5 private sessions with Alora</span></div>
+      </article>
+      <article class="program">
+        <span class="who">Any age</span>
+        <h3>Private training sessions</h3>
+        <p>One-hour, one-on-one sessions focused on your dog's specific behavior issues, with flexible scheduling at a location you choose.</p>
+      </article>
+      <article class="program">
+        <span class="who">Any age</span>
+        <h3>Advanced day training</h3>
+        <p>Intensive sessions directly with Alora, from leash training to complex behavior issues. The schedule and cost are agreed with you upfront.</p>
+      </article>
+      <article class="program">
+        <span class="who">Any age</span>
+        <h3>Mix-and-match sessions</h3>
+        <p>Combine private lessons and advanced day training into one plan that suits you and your dog.</p>
+      </article>
+    </div>
+
+    <div class="prices">
+      <div>
+        <h3>Session pricing</h3>
+        <p style="margin-top:10px">Applies to private, day training and mix-and-match sessions.</p>
+        <div class="fine">
+          <p>Evaluation fee: $75</p>
+          <p>Travel: $20 beyond 20 miles, then $5 for each additional 10 miles</p>
+        </div>
+      </div>
+      <table>
+        <tr><td>Single session</td><td><span class="amt">$150</span></td></tr>
+        <tr><td>5 sessions with Alora</td><td><span class="amt">$650</span><span class="save">Save $100</span></td></tr>
+        <tr><td>10 sessions with Alora</td><td><span class="amt">$1,200</span><span class="save">Save $300</span></td></tr>
+      </table>
+    </div>
+
+    <div class="lima">
+      <b>LIMA</b>
+      <p>Least intrusive, minimally aversive. Alora starts with the gentlest methods and only moves up the scale when a situation calls for it, so your dog learns through trust rather than fear. <a href="https://www.woofsofwisdomdogtraining.com/dog-training" style="color:var(--meadow-ink);font-weight:700">See the full training philosophy</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <picture>
+      <source type="image/webp" srcset="assets/img/alora-training-700.webp 700w, assets/img/alora-training-1100.webp 1100w" sizes="(max-width:860px) 100vw, 480px">
+      <img src="assets/img/alora-training-1100.jpg" srcset="assets/img/alora-training-700.jpg 700w, assets/img/alora-training-1100.jpg 1100w" sizes="(max-width:860px) 100vw, 480px" alt="Alora working with a dog on a sit command in a store aisle" width="1100" height="1532" loading="lazy">
+    </picture>
+    <div>
+      <h2>Meet Alora</h2>
+      <blockquote>&ldquo;As someone who was raised part of a 15+ dog pack family, I learned to speak &lsquo;dog&rsquo; pretty early.&rdquo;</blockquote>
+      <p>Alora Tawoosi grew up doing rescue work with her mom, fostering hundreds of dogs of every breed. Her mom has run Bark 'n Bubbles, a grooming studio in Leesburg, for 15 years.</p>
+      <p>Today she's a certified trainer through Animal Behavior College, specializing in basic and advanced obedience, teaching group classes and canine nutrition. Her whole program is built on communication, so you learn not only how to work with your dog, but why it works.</p>
+      <a class="btn btn-line" href="https://www.woofsofwisdomdogtraining.com/about" style="margin-top:8px">Read Alora's story</a>
+    </div>
+  </div>
+</section>
+
+<section id="walks">
+  <div class="wrap walks-grid">
+    <div>
+      <h2>Woof Walks: every walk is a lesson</h2>
+      <p style="margin-top:16px;font-size:18px">Customized walks led by your trainer, mixing play, exercise and training so your dog stays active, stimulated and well-mannered.</p>
+      <ul class="ticks">
+        <li>Someone to walk your dog during the day</li>
+        <li>Help for dogs who struggle with reactivity</li>
+        <li>More enrichment and physical activity</li>
+        <li>Reinforces obedience, redirection and confidence</li>
+      </ul>
+      <a class="btn btn-main" href="https://www.woofsofwisdomdogtraining.com/woof-walks">Learn about Woof Walks</a>
+    </div>
+    <picture>
+      <source type="image/webp" srcset="assets/img/walk-800.webp 800w, assets/img/walk-1400.webp 1400w" sizes="(max-width:860px) 100vw, 560px">
+      <img src="assets/img/walk-1400.jpg" srcset="assets/img/walk-800.jpg 800w, assets/img/walk-1400.jpg 1400w" sizes="(max-width:860px) 100vw, 560px" alt="Two dogs running across a sunny grass field lined with pine trees" width="1400" height="1050" loading="lazy">
+    </picture>
+  </div>
+</section>
+
+<div class="gallery">
+  <div class="wrap strip">
+    <picture><source type="image/webp" srcset="assets/img/g1-600.webp"><img src="assets/img/g1-600.jpg" alt="A smiling grey dog lying on a sunny deck" width="600" height="800" loading="lazy"></picture>
+    <picture><source type="image/webp" srcset="assets/img/g2-600.webp"><img src="assets/img/g2-600.jpg" alt="Two dogs on leashes posing on rocks in front of a waterfall" width="600" height="800" loading="lazy"></picture>
+    <picture><source type="image/webp" srcset="assets/img/g3-600.webp"><img src="assets/img/g3-600.jpg" alt="A dog sitting calmly beside its handler on an outdoor deck" width="600" height="750" loading="lazy"></picture>
+    <picture><source type="image/webp" srcset="assets/img/g4-600.webp"><img src="assets/img/g4-600.jpg" alt="A dog in a purple bandana standing on a tree stump in the forest" width="600" height="800" loading="lazy"></picture>
+    <picture><source type="image/webp" srcset="assets/img/g5-600.webp"><img src="assets/img/g5-600.jpg" alt="A yellow dog napping on a plaid blanket" width="600" height="450" loading="lazy"></picture>
+  </div>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Start with a free phone consult</h2>
+      <p style="margin-top:16px;font-size:18px">Tell Alora about your dog, your goals and what's been hard. Your first call is the only time you won't know your next step. After it, you'll have a training plan and a schedule.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="https://www.woofsofwisdomdogtraining.com/book-a-consult-today">Book a free phone consult</a>
+        <a class="btn btn-line" href="tel:+17038539440">Call (703)&nbsp;853-9440</a>
+      </div>
+    </div>
+    <div class="card">
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+17038539440">(703)&nbsp;853-9440</a></dd>
+        <dt>Email</dt><dd><a href="mailto:Alora@WoofsofWisdomDogTraining.com">Alora@WoofsofWisdomDogTraining.com</a></dd>
+        <dt>Hours</dt><dd>Monday to Saturday, 10&nbsp;am to 4&nbsp;pm<br>Closed Sundays</dd>
+      </dl>
+      <p class="towns">Serving Northern Virginia, including Reston, Herndon, Fairfax, Sterling, South Riding, Ashburn, Leesburg, Alexandria and more.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>&copy; Woofs of Wisdom Dog Training. Concept redesign by My Launch Partner, not the official site.</div>
+    <div class="social">
+      <a href="https://www.instagram.com/woofsofwisdomdogtraining/">Instagram</a>
+      <a href="https://www.tiktok.com/@woofsofwisdomdogtraining">TikTok</a>
+      <a href="https://www.facebook.com/groups/650462277278497">Facebook group</a>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-main" href="tel:+17038539440">Call Alora</a>
+  <a class="btn btn-line" href="https://www.woofsofwisdomdogtraining.com/book-a-consult-today">Free consult</a>
+</div>
+</body>
+</html>
